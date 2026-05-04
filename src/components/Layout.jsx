@@ -1,12 +1,14 @@
 import { Outlet, NavLink } from 'react-router-dom';
-import { Home, ListOrdered, FileText, PieChart, Settings } from 'lucide-react';
+import { Home, ListOrdered, FileText, PieChart, Settings, Target, BotMessageSquare } from 'lucide-react';
 
 export default function Layout() {
   const navItems = [
     { path: '/dashboard', label: 'Dashboard', icon: Home },
     { path: '/transactions', label: 'Transaksi', icon: ListOrdered },
+    { path: '/budget', label: 'Anggaran', icon: Target },
     { path: '/bills', label: 'Tagihan', icon: FileText },
     { path: '/reports', label: 'Laporan', icon: PieChart },
+    { path: '/chatbot', label: 'AI Advisor', icon: BotMessageSquare },
     { path: '/settings', label: 'Pengaturan', icon: Settings },
   ];
 

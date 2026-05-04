@@ -18,6 +18,8 @@ import Reports from './pages/Reports';
 import Settings from './pages/Settings';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Budget from './pages/Budget';
+import AIChatbot from './pages/AIChatbot';
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
           <Route path="bills" element={<Bills />} />
           <Route path="reports" element={<Reports />} />
           <Route path="settings" element={<Settings />} />
+          <Route path="budget" element={<Budget />} />
+          <Route path="chatbot" element={<AIChatbot />} />
         </Route>
       </Routes>
     </Router>
